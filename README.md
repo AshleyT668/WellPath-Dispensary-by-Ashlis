@@ -1,3 +1,3 @@
 # Demo
 
-Our first project
+Our first project today
