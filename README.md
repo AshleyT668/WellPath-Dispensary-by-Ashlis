@@ -1,1 +1,3 @@
-# Ashlis-Demo
+# Demo
+
+Our first project today
