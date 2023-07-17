@@ -228,7 +228,7 @@ header .navbar a:hover{
    
     <li class="active"><a href="prescriptiontable.php">View Prescription</a></li>
     <li class="active"><a href="drugstable.php">View Drugs</a></li>
-    <li class="active"><a href="stockstable.php">View Stock</a></li>
+    
 
   </ul>
     <div class="container">

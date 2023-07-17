@@ -78,6 +78,7 @@ $result = mysqli_query($conn, $query);
             echo "<td>" . $row['drugID'] . "</td>";
             echo "<td>" . $row['quantity'] . "</td>";
             echo "<td>" . $row['routeOfAdministration'] . "</td>";
+            echo "<td>" . $row['dosage'] . "</td>";
             echo "<td>" . $row['duration'] . "</td>";
             echo "<td>" . $row['pSSN'] . "</td>";
            
