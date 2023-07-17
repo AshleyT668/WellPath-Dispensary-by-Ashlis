@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appointment Form</title>
+  <style>
+     body {
+      background-image: url("https://t4.ftcdn.net/jpg/01/78/58/21/240_F_178582142_YS2vz0GaZli414ntME5KWfJtDROyPkjo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+
+</head>
+<body>
+  <h2>Book an Appointment</h2>
+  <form action="appointment.php" method="POST">
+    <label for="appointmentDate">Appointment Date:</label><br>
+    <input type="date" id="appointmentDate" name="appointmentDate" placeholder="Enter appointment date"><br><br>
+  
+    <label for="appointmentTime">Appointment Time:</label><br>
+    <input type="time" id="appointmentTime" name="appointmentTime" placeholder="Enter appointment time"><br><br>
+  
+    <label for="fName">First Name:</label><br>
+    <input type="text" id="fName" name="fName" placeholder="Enter first name"><br><br>
+  
+    <label for="lName">Last Name:</label><br>
+    <input type="text" id="lName" name="lName" placeholder="Enter last name"><br><br>
+  
+    <label for="specialist">Specialist:</label><br>
+    <input type="text" id="specialist" name="specialist" placeholder="Enter specialist"><br><br>
+  
+    <label for="doctorName">Doctor's Name:</label><br>
+    <input type="text" id="doctorName" name="doctorName" placeholder="Enter doctor's name"><br><br>
+    <label for="appointmentID">Appointment ID:</label><br>
+    <input type="text" id="appointmentID" name="appointmentID" placeholder="Enter appointment ID"><br><br>
+  
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" placeholder="Enter your message"></textarea><br><br>
+
+  
+    <input type="submit" value="Submit">
+  </form>
+  
+</body>
+</html>
