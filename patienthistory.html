@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient History Form</title>
+</head>
+<body><style>
+
+body {
+    background-image: url("https://img.freepik.com/free-photo/medical-examination-report-history-history_53876-123685.jpg?size=626&ext=jpg&ga=GA1.2.1576251838.1689066598&semt=ais");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+  
+  <form action="patienthistory.php" method="POST">
+    <label for="historyID">History ID:</label><br>
+    <input type="text" id="historyID" name="historyID" placeholder="Enter history ID" required><br><br>
+
+    <label for="dSSN">Doctor SSN:</label><br>
+    <input type="text" id="dSSN" name="dSSN" placeholder="Enter doctor SSN" required><br><br>
+
+    <label for="prescDetails">Prescription Details:</label><br>
+    <input type="text" id="prescDetails" name="prescDetails" placeholder="Enter prescription details" required><br><br>
+
+    <label for="consultationDate">Consultation Date:</label><br>
+    <input type="date" id="consultationDate" name="consultationDate" placeholder="Enter consultation date" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Form</title>
+</head>
+<body><style> body {
+  background-image: url("https://img.freepik.com/free-photo/woman-patient-signing-medical-documents-discussing-medication-treatment_482257-23033.jpg?size=626&ext=jpg&ga=GA1.1.1576251838.1689066598&semt=ais");
+  background-repeat: no-repeat;
+  background-size: cover;
+}</style>
+  
+  <h2>Enter Patient Information</h2>
+  <form action="patientform.php" method="POST">
+    <label for="pFName">First Name:</label><br>
+    <input type="text" id="pFName" name="pFName" placeholder="Enter first name"><br><br>
+
+    <label for="pLName">Last Name:</label><br>
+    <input type="text" id="pLName" name="pLName" placeholder="Enter last name"><br><br>
+
+    <label for="pSSN">Social Security Number:</label><br>
+    <input type="text" id="pSSN" name="pSSN" placeholder="Enter SSN"><br><br>
+
+    <label for="pDOB">Date of Birth:</label><br>
+    <input type="date" id="pDOB" name="pDOB" placeholder="pDOB"><br><br>
+
+    <label for="pAddress">Address:</label><br>
+    <input type="text" id="pAddress" name="pAddress" placeholder="Enter address"><br><br>
+
+    <label for="pContact">Book Appointment:</label><br>
+    <input type="text" id="pContact" name="pContact" placeholder="Enter Book Appointment"><br><br>
+
+    <label for="pEmail">Email:</label><br>
+    <input type="email" id="pEmail" name="pEmail" placeholder="Enter email"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
