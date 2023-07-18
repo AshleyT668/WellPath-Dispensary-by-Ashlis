@@ -43,6 +43,7 @@ body {
             <th>dSSN</th>
             <th>prescDetails</th>
             <th>consultationDate</th>
+            <th>pSSN</th>
             
         </tr>
         <?php
@@ -52,7 +53,7 @@ body {
             echo "<td>" . $row['dSSN'] . "</td>";
             echo "<td>" . $row['prescDetails'] . "</td>";
             echo "<td>" . $row['consultationDate'] . "</td>";
-            
+            echo "<td>" . $row['pSSN'] . "</td>";
             echo "</tr>";
         }
 
