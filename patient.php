@@ -225,7 +225,8 @@ header .navbar a:hover{
 <ul class="menu">
     
     <li class="active"><a href="appointment.html">Book Appointment Here</a></li>
-    
+    <li class="active"><a href="doctortable.php">View Available Doctors</a></li>
+    <li class="active"><a href="patientform.html">Update Personal Details</a></li>
 
   </ul>
     <div class="container">

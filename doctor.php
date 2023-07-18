@@ -204,7 +204,7 @@ header .navbar a:hover{
       display: block;
       color: solid black;
       text-decoration: none;
-      padding: 15px 10px;
+      padding: 10px 10px;
       font-size: 24px;
   font-weight: bold;
     }
@@ -224,6 +224,7 @@ header .navbar a:hover{
 </head>
 <body>
 <ul class="menu">
+   
     <li class="active"><a href="appointmenttable.php">View Appointments</a></li>
     <li class="active"><a href="appointment.html">Schedule Appointment</a></li>
     <li class="active"><a href="prescription.html">Give Prescription</a></li>
