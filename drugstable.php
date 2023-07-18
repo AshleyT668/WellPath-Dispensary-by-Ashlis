@@ -30,6 +30,7 @@
             <th>drugID</th>
             <th>tradeName</th>
             <th>dFormula</th>
+            <th>dQuantity</th>
         </tr>
         <?php
         // Replace "your_database_name" with the actual name of your database
@@ -71,6 +72,7 @@
             echo "<td>" . $row['drugID'] . "</td>";
             echo "<td>" . $row['tradeName'] . "</td>";
             echo "<td>" . $row['dFormula'] . "</td>";
+            echo "<td>" . $row['dQuantity'] . "</td>";
             echo "</tr>";
         }
 
