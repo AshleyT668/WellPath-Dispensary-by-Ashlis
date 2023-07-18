@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prescription Form</title>
+</head>
+<body>
+    <style>
+        body {
+  background-image: url("https://images.pexels.com/photos/3873191/pexels-photo-3873191.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+   
+    </style>
+  <form action="prescription.php" method="POST">
+    <label for="drugName">Drug Name:</label><br>
+    <input type="text" id="drugName" name="drugName" placeholder="Enter drug name" required><br><br>
+
+    <label for="drugID">Drug ID:</label><br>
+    <input type="text" id="drugID" name="drugID" placeholder="Enter drug ID" required><br><br>
+
+    <label for="quantity">Quantity:</label><br>
+    <input type="text" id="quantity" name="quantity" placeholder="Enter quantity" required><br><br>
+
+    <label for="dosage">Dosage:</label><br>
+    <input type="text" id="dosage" name="dosage" placeholder="Enter dosage" required><br><br>
+
+    <label for="duration">Duration:</label><br>
+    <input type="text" id="duration" name="duration" placeholder="Enter duration" required><br><br>
+
+    <label for="pSSN">Patient SSN:</label><br>
+    <input type="text" id="pSSN" name="pSSN" placeholder="Enter patient SSN" required><br><br>
+
+    <label for="routeOfAdministration">Route of Administration:</label><br>
+    <input type="text" id="routeOfAdministration" name="routeOfAdministration" placeholder="Enter route of administration" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

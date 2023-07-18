@@ -16,6 +16,7 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
         }
+        
 
 
 *{
@@ -137,6 +138,18 @@ header .navbar a:hover{
   font-size: 18px;
   color: black;
 }
+.oval-button {
+            width: 170px;
+            height:55px;
+            border-radius: 25px; /* Half of the height to make it an oval shape */
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
 .home .btn {
   display: inline-block;
@@ -478,9 +491,12 @@ html{
         <a href="#about">About</a>
         <a href="#servives">Our services</a>
         
-       <a href="register.php">Login/Register</a>
+      <a href="register.php">Login/Register</a>
         
     </div>
+    
+  <a href="appointment.html">
+    <button class ="oval-button">Book Appointment</a>
 </nav>
 
   </header>
