@@ -1,10 +1,11 @@
 <?php
 
 // Retrieve form data
-$drugName = $_POST['drugName '];
-$drugID = $_POST['drugID '];
+$prescID = $_POST['prescID'];
+$drugName = $_POST['drugName'];
+$drugID = $_POST['drugID'];
 $quantity = $_POST['quantity'];
-$route_of_administration= $_POST['route_of_administration'];
+$routeOfAdministration= $_POST['routeOfAdministration'];
 $dosage = $_POST['dosage'];
 $duration = $_POST['duration'];
 $pSSN= $_POST['pSSN'];
@@ -19,14 +20,15 @@ $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
 // Insert data into the database
 try {
-    $stmt = $conn->prepare('INSERT INTO prescription (drugName,drugID,quantity,route_of_administration,dosage,duration,pSSN) VALUES (:drugName,:drugID,:quantity,:route_of_administration,:dosage,:duration,:pSSN)');
+    $stmt = $conn->prepare('INSERT INTO prescription (prescID,drugName,drugID,quantity,routeOfAdministration,dosage,duration,pSSN) VALUES (:prescID,:drugName,:drugID,:quantity,:routeOfAdministration,:dosage,:duration,:pSSN)');
+    $stmt->bindParam(':prescID', $prescID);
     $stmt->bindParam(':drugName', $drugName);
-    $stmt->bindParam(':drugID ', $drugID);
+    $stmt->bindParam(':drugID', $drugID);
     $stmt->bindParam(':quantity', $quantity);
-    $stmt->bindParam(':route_of_administration', $route_of_administration);
     $stmt->bindParam(':dosage', $dosage);
     $stmt->bindParam(':duration', $duration);
     $stmt->bindParam(':pSSN', $pSSN);
+    $stmt->bindParam(':routeOfAdministration', $routeOfAdministration);
     $stmt->execute();
 }
 

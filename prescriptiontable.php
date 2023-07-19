@@ -61,14 +61,14 @@ $result = mysqli_query($conn, $query);
 <h1>Prescription Details</h1>
     <table>
         <tr>
-        <th>prescID</th>
+        <th>prescID</th>      
             <th>drugName</th>
             <th>drugID</th>
             <th>quantity</th>
-            <th>routeOfAdministration</th>
             <th>dosage</th>
             <th>duration</th>
             <th>pSSN</th>
+            <th>routeOfAdministration</th>
         </tr>
         <?php
         while ($row = mysqli_fetch_assoc($result)) {
@@ -77,10 +77,10 @@ $result = mysqli_query($conn, $query);
             echo "<td>" . $row['drugName'] . "</td>";
             echo "<td>" . $row['drugID'] . "</td>";
             echo "<td>" . $row['quantity'] . "</td>";
-            echo "<td>" . $row['routeOfAdministration'] . "</td>";
             echo "<td>" . $row['dosage'] . "</td>";
             echo "<td>" . $row['duration'] . "</td>";
             echo "<td>" . $row['pSSN'] . "</td>";
+            echo "<td>" . $row['routeOfAdministration'] . "</td>";
            
             echo "</tr>";
         }

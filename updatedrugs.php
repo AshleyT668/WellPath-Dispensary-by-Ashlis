@@ -9,7 +9,7 @@ if (mysqli_connect_errno()) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $pSSN = $_POST["drugID"];
+    $drugID = $_POST["drugID"];
     $field = $_POST["field"];
     $value = $_POST["value"];
 

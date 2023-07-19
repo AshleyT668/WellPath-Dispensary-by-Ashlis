@@ -3,7 +3,13 @@
 <head>
   <title>Drugs Form</title>
 </head>
-<body>
+<body><style>
+     body {
+  background-image: url("https://images.pexels.com/photos/7615574/pexels-photo-7615574.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
   <h2>Drugs </h2>
   <form action="drugs.php" method="POST">
 
@@ -16,7 +22,7 @@
     <label for="dFormula">Drug Formula:</label><br>
     <input type="text" id="dFormula" name="dFormula" placeholder="Enter Drug Formula "><br><br>
     <label for="dQuantity">Drug Quantity:</label><br>
-    <input type="number" id="dQuantity" name="dQuantity" placeholder="Enter Drug Quantity "><br><br>
+    <input type="text" id="dQuantity" name="dQuantity" placeholder="Enter Drug Quantity "><br><br>
     
   
     <input type="Submit" value="Submit">

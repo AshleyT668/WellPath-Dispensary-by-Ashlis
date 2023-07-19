@@ -54,7 +54,7 @@
         }
         
         // Function to handle deleting a patient's record
-        function deletePatient($conn, $drugID) {
+        function deleteDrugs($conn, $drugID) {
             $query = "DELETE FROM drugs WHERE drugID = '$drugID'";
             if (mysqli_query($conn, $query)) {
                 echo "Record deleted successfully.";
