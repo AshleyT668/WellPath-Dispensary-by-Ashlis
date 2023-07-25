@@ -17,10 +17,10 @@ try {
     // Insert data into the database
     $stmt = $conn->prepare('INSERT INTO drugs (drugID, tradeName, dFormula,dQuantity)
      VALUES (:drugID, :tradeName, :dFormula,:dQuantity)');
-    $stmt->bindParam(':drugID', $drugID);
-    $stmt->bindParam(':tradeName', $tradeName);
-    $stmt->bindParam(':dFormula', $dFormula);
-    $stmt->bindParam(':dQuantity', $dQuantity);
+    $stmt->bindParam(':drugID',$drugID);
+    $stmt->bindParam(':tradeName',$tradeName);
+    $stmt->bindParam(':dFormula',$dFormula);
+    $stmt->bindParam(':dQuantity',$dQuantity);
     $stmt->execute();
 
     echo "Data inserted successfully.";
